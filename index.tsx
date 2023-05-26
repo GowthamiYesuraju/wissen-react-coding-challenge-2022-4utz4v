@@ -53,7 +53,6 @@ const App = () => {
     <div className="login-form">
       <div>
         <img
-          data-testid="logo"
           className="logo-wissly"
           alt="logo"
           src={logoUrl}
@@ -69,6 +68,7 @@ const App = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              data-testid="email"
             />
           </div>
           <div className="form-group">
@@ -76,6 +76,7 @@ const App = () => {
             <input
               type="password"
               value={password}
+              data-testid="password"
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
